@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/components/input-email.css">
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <div id="root">
+        <header class="header">
+            <div class="header-content">
+                <img class="header__logo" src="./images/logo.svg" alt="Base Apparel Logo">
+            </div>
+        </header>
+        <picture class="hero">
+            <source 
+                media="(min-width: 768px)" 
+                srcset="./images/hero-desktop.jpg"
+            >
+            <img class="hero__img" src="./images/hero-mobile.jpg" alt="Hero Mobile">
+        </picture>
+        <main id="main" class="main">
+            <div class="txt-block">
+                <h1 class="txt-block__title">
+                    We're <span class="txt-block-title__span">coming soon</span>
+                </h1>
+                <p class="txt-block__content">
+                    Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+                </p>
+                <div class="txt-block__input" data-insert-component="input-email"></div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="https://github.com/danieldampe" target="_blank">danieldampe</a>.
+            </p>
+        </footer>
+    </div>
+    <!-- Input Email -->
+    <template id="input-email">
+        <div class="input-email">
+            <input class="input-email__input input" type="email" name="email_txt" placeholder="Email Address">
+            <div class="input-email__icon-error icon display-none">
+                <img class="input-email-icon-error__img" src="./images/icon-error.svg" alt="Icon Error">
+            </div>
+            <button class="input-email__btn button">
+                <img class="input-email-btn__icon" src="./images/icon-arrow.svg" alt="Icon Arrow">
+            </button>
+            <div class="input-email__msg message display-none">Please provide a valid email</div>
+        </div>
+    </template>
+    <!-- JS -->
+    <script type="module" src="./js/index.js"></script>
+    <!-- 
+        We're coming soon
+
+        Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.
+
+        Email Address
+     -->
+</body>
+</html>
